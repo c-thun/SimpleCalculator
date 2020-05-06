@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>A Simple Calculator!</title>
+  </head>
+
+  <body>
+    <div class="container resultArea">
+      <p id="showCalc"> </p>
+      <div class="row">
+
+      </div>
+    </div>
+    <div class="container-fluid calci">
+      <div class="row">
+        <div class="d-none d-md-block col-md-7 incol-7">
+          <input type="button" name="numbtn" value="&#40;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="&#41;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="mc" class="btn btn-sec">
+          <input type="button" name="numbtn" value="m&#x2b;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="m&#x2212;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="mr" class="btn btn-sec">
+        </div>
+        <div class="col-md-5 incol-5">
+          <input type="button" name="supbtn" value="AC" class="btn btn-sup">
+          <input type="button" name="supbtn" value="&#xb1;" class="btn btn-sup">
+          <input type="button" name="supbtn" value="&#x25;" class="btn btn-sup">
+          <input type="button" name="divide" value="&#247;" class="btn btn-primary-action">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="d-none d-md-block col-md-7 incol-7">
+          <input type="button" name="numbtn" value="inv" class="btn btn-sec">
+          <input type="button" name="numbtn" value="x&#xb2;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="x&#xb3;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="x&#x207F;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="e  &#x036F;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="10  &#x036F;" class="btn btn-sec">
+        </div>
+        <div class="col-md-5 incol-5">
+          <input type="button" name="numbtn" value="7" class="btn btn-num">
+          <input type="button" name="numbtn" value="8" class="btn btn-num">
+          <input type="button" name="numbtn" value="9" class="btn btn-num">
+          <input type="button" name="multiply" value="&#xd7;" class="btn btn-primary-action">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="d-none d-md-block col-md-7 incol-7">
+          <input type="button" name="numbtn" value="&#x215F;&#x2093;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="&#x221A;x" class="btn btn-sec">
+          <input type="button" name="numbtn" value="&#x221B;x" class="btn btn-sec">
+          <input type="button" name="numbtn" value="&#x221C;x" class="btn btn-sec">
+          <input type="button" name="numbtn" value="ln" class="btn btn-sec">
+          <input type="button" name="numbtn" value="log" class="btn btn-sec">
+        </div>
+        <div class="col-md-5 incol-5">
+          <input type="button" name="numbtn" value="4" class="btn btn-num">
+          <input type="button" name="numbtn" value="5" class="btn btn-num">
+          <input type="button" name="numbtn" value="6" class="btn btn-num">
+          <input type="button" name="subtract" value="&#x2212;" class="btn btn-primary-action">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="d-none d-md-block col-md-7 incol-7">
+          <input type="button" name="numbtn" value="x&#x21;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="sin" class="btn btn-sec">
+          <input type="button" name="numbtn" value="cos" class="btn btn-sec">
+          <input type="button" name="numbtn" value="tan" class="btn btn-sec">
+          <input type="button" name="numbtn" value="e" class="btn btn-sec">
+          <input type="button" name="numbtn" value="EE" class="btn btn-sec">
+        </div>
+        <div class="col-md-5 incol-5">
+          <input type="button" name="numbtn" value="1" class="btn btn-num">
+          <input type="button" name="numbtn" value="2" class="btn btn-num">
+          <input type="button" name="numbtn" value="3" class="btn btn-num">
+          <input type="button" name="addition" value="&#x2b;" class="btn btn-primary-action">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="d-none d-md-block col-md-7 incol-7">
+          <input type="button" name="numbtn" value="deg" class="btn btn-sec">
+          <input type="button" name="numbtn" value="sinh" class="btn btn-sec">
+          <input type="button" name="numbtn" value="cosh" class="btn btn-sec">
+          <input type="button" name="numbtn" value="tanh" class="btn btn-sec">
+          <input type="button" name="numbtn" value="&#x213C;" class="btn btn-sec">
+          <input type="button" name="numbtn" value="Rand" class="btn btn-sec">
+        </div>
+        <div class="col-md-5 incol-5">
+          <input type="button" name="numbtn" id="zeroBtn" value="0" class="btn btn-num">
+          <input type="button" name="numbtn" value="." class="btn btn-num">
+          <input type="button" name="resultant" value="&#x3d;" class="btn btn-primary-action">
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
